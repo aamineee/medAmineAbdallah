@@ -1,0 +1,31 @@
+
+
+<div class="min-h-screen bg-red-800 py-5" >
+  <div class='overflow-x-auto w-full'>
+      <table class='mx-auto max-w-4xl w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden' style="max-width: 600px;">
+          <thead class="bg-gray-900">
+              <tr class="text-white text-left">
+                  <th class="font-semibold text-sm uppercase px-6 py-4"> Title </th>
+                  <th class="font-semibold text-sm uppercase px-6 py-4"> Body </th>
+               
+              </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+              <tr *ngFor="let p of post">
+                  <td class="px-6 py-4">
+                      <div class="flex items-center space-x-3">
+                          <div>
+                              <p> {{p.title}}</p>
+                          </div>
+                      </div>
+                  </td>
+                  <td class="px-6 py-4">
+                      <p > {{p.body}} </p>
+                  </td>
+                 
+              </tr>
+             
+          </tbody>
+      </table>
+  </div>
+</div>

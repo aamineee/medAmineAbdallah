@@ -1,0 +1,15 @@
+
+<br><br>
+<div class="card" >
+    <div class="row col-sm-12" id="sortable" *ngFor="let u of user">
+    <h5 class="card-header">Name : {{u.name}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">UserName : {{u.username}}</h5>
+      <p class="card-text">Email : {{u.email}}</p>
+      <a [href]="'https://'+u.website" class="btn btn-primary">Web Site</a>
+    </div>
+
+</div>
+  </div>
+
+
